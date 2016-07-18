@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="显示课表"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_search_course"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="课表查询" />
+        <item
+            android:id="@+id/nav_search_grade"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="成绩查询" />
+    </group>
+
+    <item android:title="用户设置">
+        <menu>
+            <item
+                android:id="@+id/nav_change_pass"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="修改密码" />
+            <item
+                android:id="@+id/nav_change_usr"
+                android:icon="@drawable/ic_menu_share"
+                android:title="切换用户" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="退出登录" />
+        </menu>
+    </item>
+
+</menu>
