@@ -14,4 +14,19 @@
     <color name="lightyellow">#f8fceb</color>
     <color name="lyellow">#f9fca9</color>
     <color name="red">#FF0000</color>
+    <color name="seablue">#5fc0e6</color>
+    <color name="whitesmoke">#F5F5F5</color><!--烟白色 -->
+    <color name="lightgray">#8f8f8f</color><!--亮灰色 -->
+    <color name="palegreen">#98FB98</color><!--苍绿色 -->
+    <color name="blueviolet">#DA70D6</color><!--淡紫色 -->
+    <color name="lightcoral">#F08080</color><!--亮珊瑚色 -->
+    <color name="lightpink">#FFB6C1</color><!--亮粉红色-->
+    <color name="goldenrod">#DAA520</color><!--金麒麟色 -->
+    <color name="aquamarine">#7FFFD4</color><!--碧绿色-->
+    <color name="gold">#FFD700</color><!--金色 -->
+    <color name="color_dark_grey">#808080</color>
+    <color name="color_black">#000000</color>
+    <color name="color_green">#00FF00</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_white">#FFFFFF</color>
 </resources>

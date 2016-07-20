@@ -6,112 +6,112 @@
     >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="选修"
-        android:layout_gravity="right"
         android:id="@+id/course_xz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/text"
-        android:layout_alignParentEnd="true" />
+        android:layout_gravity="start"
+        android:text="@string/xx"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="课程性质"
         android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView13"
-        android:layout_alignParentStart="true" />
+        android:text="@string/kcxz"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="学分"
         android:id="@+id/textView8"
-        android:layout_below="@+id/text"
-        android:layout_alignEnd="@+id/text" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="2.0"
+        android:layout_alignEnd="@+id/text"
+        android:layout_below="@+id/text"
+        android:text="@string/xf"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/courde_xf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/course_xz"
         android:layout_below="@+id/text"
-        android:layout_alignEnd="@+id/course_xz" />
+        android:text="@string/xf_exam"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="绩点"
         android:id="@+id/textView9"
-        android:layout_below="@+id/textView8"
-        android:layout_alignStart="@+id/textView8" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="3.7"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:text="@string/jd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/course_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/courde_xf"
         android:layout_below="@+id/textView8"
-        android:layout_alignStart="@+id/courde_xf" />
+        android:text="@string/jd_exam"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="课程代码"
         android:id="@+id/textView10"
-        android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/text" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="104451"
+        android:layout_alignEnd="@+id/text"
+        android:layout_alignParentTop="true"
+        android:text="@string/kcdm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/course_dm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:text="@string/dm_exm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="所属学院"
         android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView10"
         android:layout_below="@+id/textView10"
-        android:layout_alignEnd="@+id/textView10" />
+        android:text="@string/ksxy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="外国语言文学学院"
         android:id="@+id/course_xy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/courde_xf"
         android:layout_below="@+id/course_dm"
-        android:layout_alignEnd="@+id/courde_xf" />
+        android:text="@string/ksxy_exam"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="考试性质"
         android:id="@+id/textView13"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentStart="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="正常考试"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12"
+        android:text="@string/ksxz"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/ksxz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/courde_xf"
         android:layout_below="@+id/course_xy"
-        android:layout_alignEnd="@+id/courde_xf" />
+        android:text="@string/ksxz_exam"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

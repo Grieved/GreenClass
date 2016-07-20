@@ -2,11 +2,11 @@ package greenstudio.green_class.fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
-import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,27 +34,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import greenstudio.green_class.Utils.HttpPostUtil;
-import greenstudio.green_class.Login;
+import greenstudio.green_class.Activities.Login;
+import greenstudio.green_class.Adapters.Grade_Adapter;
 import greenstudio.green_class.Infomation.MsgInfo;
-import greenstudio.green_class.R;
+import greenstudio.green_class.Infomation.Search_Info;
 import greenstudio.green_class.Infomation.URLInfo;
+import greenstudio.green_class.R;
+import greenstudio.green_class.Utils.HttpPostUtil;
 
 /**
  * Created by wangyu on 7/18/16.
  */
 public class Grade_Search extends Fragment {
-    private String[] XNS = {"2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", ""};
-    private String[] XQS = {"3", "12", "16", ""};
-    private String XN;
-    private String XQ;
-    private String[] XN_list = {"2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017", "2017-2018", "2018-2019", "2019-2020", "2020-2021", "全部"};
-    private String[] XQ_list = {"第1学期", "第二学期", "第三学期", "全部"};
-    private ArrayAdapter<String> XN_adapter;
-    private ArrayAdapter<String> XQ_adapter;
     private static int total_xs;
     private static double total_gpa;
     private static double gpa;
+    private String XN;
+    private String XQ;
+    private ArrayAdapter<String> XN_adapter;
+    private ArrayAdapter<String> XQ_adapter;
     private Context context;
     private boolean getGrade_flag;
     private List<Map<String, String>> group_list;
@@ -86,14 +84,14 @@ public class Grade_Search extends Fragment {
         gpa_show = (TextView) view.findViewById(R.id.show_gpa);
         cal_gpa = (Button) view.findViewById(R.id.GPA);
         search_grade = (Button) view.findViewById(R.id.do_search);
-        XQ_adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, XQ_list);
-        XN_adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, XN_list);
+        XQ_adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, Search_Info.XQ_list);
+        XN_adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, Search_Info.XN_list);
         XQ_spinner.setAdapter(XQ_adapter);
         XN_spinner.setAdapter(XN_adapter);
         XN_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                XN = XNS[i];
+                XN = Search_Info.XNS[i];
             }
 
             @Override
@@ -104,7 +102,7 @@ public class Grade_Search extends Fragment {
         XQ_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                XQ = XQS[i];
+                XQ = Search_Info.XQS[i];
             }
 
             @Override
@@ -160,7 +158,7 @@ public class Grade_Search extends Fragment {
                             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(i);
                         } catch (Exception e) {
-
+                            e.printStackTrace();
                         }
                         try {
                             group_list.clear();

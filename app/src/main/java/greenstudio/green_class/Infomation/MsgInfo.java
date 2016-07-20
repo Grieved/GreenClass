@@ -10,4 +10,6 @@ public class MsgInfo {
     public final static int GRADE_MSG = 0x1110;
     public final static int INFO_MSG = 0x3310;
     public final static int HEAD_MSG = 0x3333;
+    public final static int COURSE_SEARCH_MSG = 0x3444;
+    public final static int UPDATE_COURSE_SEARCH_MSG = 0x34125;
 }
